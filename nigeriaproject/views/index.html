@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Nigeria project</title>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+		
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiptyJr37nEzaiLzLlGbTtjBUG5eFII6o">
+	    </script>
+	    <!-- <link rel="stylesheet" href="jquery-ui.css"> -->
+	    <link rel="stylesheet" type="text/css" href="style.css" />
+	    <script type="text/javascript">
+	    /* Set the width of the side navigation to 250px */
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		/* Set the width of the side navigation to 0 */
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		}
+
+	    </script>
+	</head>
+
+	<body>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="/">Home</a>
+			<a href="/about">About</a>
+			<!-- <a href="/discussion">Discussion</a> -->
+			<a href="http://chuksy.herokuapp.com" target="_blank">Creator</a>
+		</div>
+
+		<div id="main">
+			<div id="header">
+				<h2><a href="/">Nigeria project</a></h2>
+				<a href="#" id="menuHead"><span onclick="openNav()">Menu</span></a>
+				<div class="clear"></div>
+			</div>
+
+			<div id="main-content">
+				<div id="map"></div>
+				<div id="story">
+					<nav id="story-nav">
+						<ul>
+							<li><a href="#" id="period" class="active">Period</a></li>
+							<!-- <li><a href="#" id="fatalities">Fatalities</a></li> -->
+							<li><a href="#" id="event-type">Event Type</a></li>
+						</ul>
+						<div class="clear"></div>
+					</nav>
+					<div id="menu-select">
+						<!-- <div id="slider-range"></div> -->
+						<!-- the different menus for each type of selection-->
+					</div>
+					<div id="event_details">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="script.js"></script>
+		<script type="text/javascript">
+		$("#story-nav ul li a").on("click", function() {
+	    	$("#story-nav ul li a").removeClass("active");
+	    	$(this).addClass("active");
+	    });
+	    
+		</script>
+	</body>
+
+</html>

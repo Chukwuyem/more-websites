@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>About | Nigeria project</title>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<style type="text/css">
+		#about-section {
+			background: rgba(177,194,128, 1);
+			height: 80%;
+			width: 75%;
+			margin: auto;
+			padding: 10px;
+			overflow: auto;
+			margin-top: 10px;
+			border-radius: 1em;
+			color: white;
+		}
+
+		</style>
+		<script type="text/javascript">
+	    /* Set the width of the side navigation to 250px */
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		/*for update */
+		/* Set the width of the side navigation to 0 */
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		}
+	    </script>
+	</head>
+
+	<body>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="/">Home</a>
+			<a href="/about">About</a>
+			<a href="/discussion">Discussion</a>
+			<a href="//chuksy.herokuapp.com" target="_blank">Creator</a>
+		</div>
+
+		<div id="main">
+			<div id="header">
+				<h2><a href="/">Nigeria project</a></h2>
+				<a href="#" id="menuHead"><span onclick="openNav()">Menu</span></a>
+				<div class="clear"></div>
+			</div>
+			<div id="about-section">
+				<p>
+					The Nigeria project is an amalgam of multiple ideas. One of these was an idea for a website to show the stories of experiences of the common person in a particular historical event. The idea was based on the assumption that these stories and experiences, that would be gathered manually, would be readily available. However, the difficult of finding these stories was an obstacle.
+				</p>
+				<p>
+					Later on, still working on the same idea, the creator came across <a href="//www.acleddata.com/" target="_blank">ACLED data,</a> a project that collected and aggregated data on conflict and war events, most of which were occurrences that barely made any news or got any form of recognition. This was similar to the previous idea of experiences and stories that would usually not get told. This is especially because a lot of these occurrences were skirmishes, a good amount of which had no fatalities, but were still politically relevant. The creator couldn't help but think of a way to mutate the first idea to work with ACLED's data. This result: NIGERIA PROJECT.
+				</p>
+				<p>
+					Furthermore down is a more detailed "manual" of sorts on how NIGERIA PROJECT works and how it is expected to be used. But I suspect that if you're reading this, it's too late. You've already figured out how to use it.
+				</p>
+				<p>
+					I do, however, still want to point of one thing - what makes NIGERIA PROJECT much more than a data visualization project. Think of the first idea mentioned: personal stories of events. With NIGERIA PROJECT, we have these events, ranging from the very small skirmishes to clashes with fatalities in the thousands. Moreover, in NIGERIA PROJECT, there is input. A user going through the events and sees one which they experienced can add a short comment or a detailed narrative of their experience of that event, which is published and associated with that event. Another user can look at that same event and see the first user's story.
+				</p>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="discuss_script.js"></script>
+	</body>
+
+</html>

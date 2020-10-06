@@ -1,0 +1,213 @@
+@font-face {
+	font-family: 'Lulo Clean Outline';
+	src: url("Yellow Design Studio - Lulo Clean Outline Bold.otf") format("opentype");
+}
+
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body, #main{
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	background: rgba(194,178,128, 0.5);
+}
+
+#header{
+	/*background: rgb(131, 244, 66);*/
+	background: rgba(194,145,128, 0.8);
+	padding: 5px;
+	text-align: center;
+	border-bottom: 2px solid;
+	border-bottom-color: white;
+}
+
+#header > h2{
+	font-family: 'Lulo Clean Outline', sans-serif;
+	display: block;
+	margin: 0;
+	color: white;
+}
+
+#header h2 a{
+	text-decoration: none;
+	color: white;
+}
+
+#menuHead {
+	float: left;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.clear {
+	clear: both;
+}
+
+#main-content{
+	/*background: rgb(66, 244, 182);*/
+
+	height: 90%;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#map {
+	/*background: rgb(116, 66, 244);*/
+	width: 50%;
+	display: inline-block;
+	height: 100%;
+}
+
+#story-menu, #menu-select {
+	padding: 2px;
+}
+
+#menu-select > select {
+    margin: 0 15px 0 10px;
+}
+
+#story {
+	/*background: rgb(244, 66, 215);*/
+	background: rgba(177,194,128, 0.5);
+	width: 45%;
+	height: 100%;
+	float: right;
+}
+
+button, #story > div > button, #story > div > select{
+	margin: 0 15px 0 10px;
+	outline: 0;
+	border: 0;
+	border-radius: .5em;
+	padding: 1.5px 10px;
+    font-size: .75em;
+    background: white;
+}
+#story-nav {
+	display: block;
+}
+
+#story-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#story-nav ul li {
+	display: block;
+	float: left;
+}
+
+/*#story-nav ul li:hover {
+	background: #fff;
+}*/
+
+#story-nav ul li a {
+	text-decoration: none;
+	color: black;
+	padding: 10px 30px;
+	/*border-right: 1px solid #fff;*/
+	/*border-bottom: 1px solid #fff;*/
+	display: inline-block;
+}
+
+#story-nav ul li a:hover {
+	background: #fff;
+}
+
+#story-nav ul li a.active {
+	background: #fff;
+}
+
+#story-nav ul li:last-child a {
+	border-right: none;
+}
+
+#event_details {
+    padding: 10px;
+    overflow-y: auto;
+    font-size: .9em;
+    max-height: 80%;
+}
+
+#event_details p span {
+	font-weight: bold;
+	font-size: larger;
+}
+
+#comment_section {
+	background: white;
+/*	overflow: hidden;
+	height: auto;*/
+}
+
+#event_comment_button {
+	display: block;
+}
+
+#slider-range {
+	width: 80%;
+	border-radius: 1em;
+	margin-top: 5px;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    /*color: #818181;*/
+    color: black;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+#mySidenav {
+	background: #9180c2;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    /**padding: 20px;**/
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
